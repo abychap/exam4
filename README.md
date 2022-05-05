@@ -29,7 +29,7 @@ ACTGCAGCGCGATGATGAGAGAGATTTCAGGACACACATTGCCAAATTGAGGCAT
 
 ATATATATATATATATA;
 
-The output should be two dataframes and an error for the third string (it contains a character not included in the alphabet).
+The output should be two dataframes and an error for the third string (it contains a character not included in the alphabet). The dataframe files are also included and are named: ATTTGGATT.csv and ACTGCAGCGCGATGATGAGAGAGATTTCAGGACACACATTGCCAAATTGAGGCAT.csv
 
 # Outputting dataframes to new files
 
