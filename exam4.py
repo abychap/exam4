@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-import pandas as pd #import to ba able to make dataframe at end 
+import pandas as pd #import to be able to make dataframe at end 
 
 #Define function for substrings possible: 
 def substrings_possible_function(string_of_letters,k):
     '''input is a string of letters (containing only A,G,T, or C) and a k value (the length of new substrings wanted)
     returns the minimum possible number of substrings'''
-    assert k > 0, 'k cannot be negative' #will give an error is negative k value is entered
+    assert k > 0, 'k cannot be negative' #will give an error if negative k value is entered
     for letter in string_of_letters:
         assert letter in ["A","G","T","C"], 'string includes character outside of alphabet: characters can only be A,G,T, or C' #will give an error if any character is not a part of the correct alphabet
     assert type(k) is int, 'k must be a whole number' #will give an error if k is not an integer 
@@ -42,7 +42,7 @@ def create_df(string_of_letters):
     obslist=[] #we start by making blank lists to append onto as we loop through the string with each function. The output of he functions as k increases will be added to these lists
     poslist=[]
     kvalues=[] 
-    for k in range(1,len(string_of_letters)+1):  
+    for k in range(1,len(string_of_letters)+1): #looping through full length of the string 
         obskmers= observed_substrings_function(string_of_letters, k)
         obslist.append(obskmers)
     for k in range(1,len(string_of_letters)+1):    
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     string_of_letters_full= 'stringofletters.txt'
     with open(string_of_letters_full, "r") as f:
         for eachline in f:   
-            eachline = eachline.strip()
+            eachline = eachline.strip() #stripping the strings of any extra "new line" characters
             print(eachline) #I had the code print each line to keep the datframes organized when they print to the terminal 
             print(create_df(eachline)) #prints the df to the terminal 
             print(ling_comp(eachline)) #prints the linguistic complexity
