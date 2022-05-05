@@ -5,11 +5,15 @@ Included in this repository is a python script (exam4.py) to analyze the amount 
 If a .txt file contained two strings, the user can expect the terminal output to appear as follows: 
 
 string1 name
+
 dataframe for string1
+
 linguistic complexity for string1
 
 string2 name
+
 dataframe for string2
+
 linguistic complexity for string2
 
 Command to run this script in the terminal: python3 exam4.py stringofletters.txt
