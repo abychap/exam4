@@ -22,7 +22,13 @@ Command to run tests: py.test test_exam4.py
 
 # Sample text file provided 
 
-A sample text file has been provided to run the script on (stringofletters.txt). The text file contains three strings. The output should be two dataframes and an error for the third string (it contains a character not included in the alphabet).
+A sample text file has been provided to run the script on (stringofletters.txt). The text file contains three strings:
+
+ATTTGGATT
+ACTGCAGCGCGATGATGAGAGAGATTTCAGGACACACATTGCCAAATTGAGGCAT
+ATATATATATATATATA;
+
+The output should be two dataframes and an error for the third string (it contains a character not included in the alphabet).
 
 # Outputting dataframes to new files
 
